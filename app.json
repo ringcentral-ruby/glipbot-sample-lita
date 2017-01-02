@@ -1,0 +1,70 @@
+{
+    "name": "Glipbot sample",
+    "description": "This repository provides a simple Glipbot sample app",
+    "repository": "https://github.com/ringcentral-ruby/glipbot-sample-lita",
+    "logo": "https://raw.githubusercontent.com/ringcentral-ruby/smsbot-ringcentral-lita/master/ringcentral-ruby.png",
+    "keywords": ["Glip", "Chatbot", "Lita"],
+    "website": "https://github.com/ringcentral-ruby",
+    "addons": [
+        "redistogo:micro",
+        "papertrail:choklad"
+    ],
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "Hobby"
+        }
+    },
+    "env": {
+        "LITA_ROBOT_NAME": {
+            "description": "Your Glipbot name",
+            "value": "lita",
+            "required": true
+        },
+        "LITA_ROBOT_LOCALE__TYPESYM": {
+            "description": "Your Lita bot locale",
+            "value": "en",
+            "required": false
+        },
+        "LITA_ROBOT_logLevel__TYPESYM": {
+            "description": "Your Lita log_level",
+            "value": "info",
+            "required": false
+        },
+        "LITA_ROBOT_ADAPTER": {
+            "description": "Your Litabot adapter",
+            "value": "glip",
+            "required": true
+        },
+        "LITA_ADAPTERS_GLIP_appKey": {
+            "description": "Set this to your RingCentral app key",
+            "value": "",
+            "required": true
+        },
+        "LITA_ADAPTERS_GLIP_appSecret": {
+            "description": "Set this to your RingCentral app secret",
+            "value": "",
+            "required": true
+        },
+        "LITA_ADAPTERS_GLIP_serverUrl": {
+            "description": "Your RingCentral API host",
+            "value": "https://platform.devtest.ringcentral.com",
+            "required": true
+        },
+        "LITA_ADAPTERS_GLIP_USERNAME": {
+            "description": "Set this to your RingCentral username, e.g. main company or extension phone number",
+            "value": "",
+            "required": true
+        },
+        "LITA_ADAPTERS_GLIP_EXTENSION": {
+            "description": "Set this to your RingCentral extension",
+            "value": "",
+            "required": false
+        },
+        "LITA_ADAPTERS_GLIP_PASSWORD": {
+            "description": "Set this to your RingCentral password",
+            "value": "",
+            "required": true
+        }
+    }
+}
