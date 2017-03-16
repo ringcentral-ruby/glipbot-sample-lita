@@ -6,7 +6,7 @@
     "keywords": ["Glip", "Chatbot", "Lita"],
     "website": "https://github.com/ringcentral-ruby",
     "addons": [
-        "redistogo:micro",
+        "redistogo:nano",
         "papertrail:choklad"
     ],
     "formation": {
